@@ -10,6 +10,7 @@ defmodule Todo do
         "An item with the name #{item} already exists in this todo list..."
       :false ->
         Map.put(list, item, status)  
+    end
   end
   def deleteItem(list, item) do
     # check if item exists
